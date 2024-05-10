@@ -5,6 +5,6 @@ omit = *migrations*,
        *test*,
        *admin*,
        ./manage.py,
-       ./medical_scheduling/config/*,
-       ./medical_scheduling/wsgi.py,
+       ./healthcare_app_api/config/*,
+       ./healthcare_app_api/wsgi.py,
        *__init__*

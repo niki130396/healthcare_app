@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       - DJANGO_SECRET_KEY=local
-    build: healthcare_app
+    build: healthcare_app_api
     command: >
       bash -c "python wait_for_postgres.py &&
                ./manage.py migrate &&
@@ -19,7 +19,7 @@ services:
       - postgres
   documentation:
     restart: always
-    build: healthcare_app
+    build: healthcare_app_api
     command: "mkdocs serve"
     volumes:
       - ./:/code

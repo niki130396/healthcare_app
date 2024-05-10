@@ -16,7 +16,7 @@ class Local(Common):
         '--nologcapture',
         '--with-coverage',
         '--with-progressive',
-        '--cover-package=medical_scheduling'
+        '--cover-package=healthcare_app_api'
     ]
 
     # Mail

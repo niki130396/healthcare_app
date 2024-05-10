@@ -23,7 +23,7 @@ class Common(Configuration):
         'django_filters',            # for filtering rest endpoints
 
         # Your apps
-        'medical_scheduling.users',
+        'healthcare_app_api.users',
 
     )
 
@@ -39,9 +39,9 @@ class Common(Configuration):
     )
 
     ALLOWED_HOSTS = ["*"]
-    ROOT_URLCONF = 'medical_scheduling.urls'
+    ROOT_URLCONF = 'healthcare_app_api.urls'
     SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
-    WSGI_APPLICATION = 'medical_scheduling.wsgi.application'
+    WSGI_APPLICATION = 'healthcare_app_api.wsgi.application'
 
     # Email
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
