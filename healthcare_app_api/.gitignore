@@ -332,3 +332,4 @@ healthcare_app_api/media/
 .env
 .envs/*
 !.envs/.local/
+.idea
